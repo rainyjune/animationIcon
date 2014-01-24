@@ -7,11 +7,12 @@
   </head>
   <body>
     <script type="text/javascript" src="AnimationIcon.js"></script>
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
     <script type="text/javascript">
-      window.onload = initAll;
-      function initAll () {
-        var myAnimationIcon = new AnimationIcon();
-      }
+    $(function(){
+      var myAnimationIcon = new AnimationIcon();
+      myAnimationIcon.playVideo({title:'JSON.parse(video).id',videoid:"JSON.parse(video).id"});
+    });
     </script>
   </body>
 </html>
