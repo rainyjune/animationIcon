@@ -1,0 +1,68 @@
+#float_div {
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    display: none;
+    font-size: 16px;
+}
+
+#canvas_div {
+    width: 309px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    display: none;
+    overflow: hidden;
+}
+
+#cover_div {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    right: 105px;
+    display: none;
+    overflow: hidden;
+}
+#cover_search {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 25px;
+        right: 45px;
+        display: none;
+        overflow: hidden;
+}
+@media only screen and (max-width: 480px) {
+    #float_div {
+        width: 130px;
+        height: 75px;
+        position: absolute;
+        top:19px;
+        right: 10px;
+        display: none;
+        font-size: 11px;
+    }
+
+    #canvas_div {
+        width: 184px;
+        height: 75px;
+        position: absolute;
+        top: 13px;
+        right: 0px;
+        display: none;
+        overflow: hidden;
+    }
+    #cover_div {
+        width: 38px;
+        height: 38px;
+        position: absolute;
+        top: 10px;
+        right: 35px;
+        display: none;
+        overflow: hidden;
+    }
+}
