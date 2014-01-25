@@ -155,6 +155,9 @@ AnimationIcon.prototype.animationsEnd = function(){
   };
   this.playAnimation();
 },
+/**
+ * Do a loop task to finish the animation.
+ */
 AnimationIcon.prototype.playingLoop = function(){
   var that = this;
   this.start=36;
