@@ -176,7 +176,7 @@ AnimationIcon.prototype.canvasClearRect = function() {
  * @param number height
  * @return undefined
  */
-AnimationIcon.prototype.dropAnimationImage = function(width,height){
+AnimationIcon.prototype.redrawAnimationImage = function(width,height){
   this.ctx.clearRect(0, 0, width, height);
   var row = Math.floor(this.start / 3);
   var col = this.start - row * 3;
@@ -191,7 +191,7 @@ AnimationIcon.prototype.dropAnimationImage = function(width,height){
  */
 AnimationIcon.prototype.playAnimation = function() {
   var that = this;
-  this.dropAnimationImage(this.canvas.width,this.canvas.height);
+  this.redrawAnimationImage(this.canvas.width,this.canvas.height);
   this.start++;
   if (this.start >= this.end) {
     this.callback();
@@ -236,7 +236,7 @@ AnimationIcon.prototype.play = function(){
         })
       },1500);
     })
-  }
+  };
   that.playAnimation();
 };
 
