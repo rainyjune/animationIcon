@@ -165,9 +165,7 @@ AnimationIcon.prototype.playingLoop = function(){
   this.playAnimation();
 };
 AnimationIcon.prototype.canvasClearRect = function() {
-  try{
-      this.ctx.clearRect(this.canvas.width, this.canvas.height);
-  }catch(e){}
+  this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 };
 
 /**
@@ -177,7 +175,7 @@ AnimationIcon.prototype.canvasClearRect = function() {
  * @return undefined
  */
 AnimationIcon.prototype.redrawAnimationImage = function(width,height){
-  this.ctx.clearRect(0, 0, width, height);
+  this.canvasClearRect();
   var row = Math.floor(this.start / 3);
   var col = this.start - row * 3;
   var offw = col * width;
