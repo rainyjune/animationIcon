@@ -12,6 +12,11 @@
     $(function(){
       var myAnimationIcon = new AnimationIcon();
       myAnimationIcon.playVideo({title:'JSON.parse(video).id',videoid:"JSON.parse(video).id"});
+
+      setTimeout(function(){
+        // Hide the animation icon.
+        myAnimationIcon.playEnd();
+      }, 10000);
     });
     </script>
   </body>
