@@ -164,12 +164,15 @@ AnimationIcon.prototype.playingLoop = function(){
   };
   this.playAnimation();
 };
+/**
+ * Clears all the canvas pixels.
+ */
 AnimationIcon.prototype.canvasClearRect = function() {
   this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 };
 
 /**
- *
+ * Redraw the animation image.
  * @param number width
  * @param number height
  * @return undefined
